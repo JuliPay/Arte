@@ -1,0 +1,1187 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
+@import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(images/paisaje-joseon.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+
+header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+
+.navbar-item {
+    padding: 14px 20px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-link:hover {
+    background-color: #575757;
+}
+
+.content {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #f0ddb0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ebcfd8;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+
+#bird-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+
+}
+
+.bird-container {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.bird {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg');
+    background-size: auto 100%;
+    animation-name:initial;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+}
+
+.bird-container--one {
+    animation: fly1 10s linear infinite;
+}
+
+.bird-container--two {
+    animation: fly2 15s linear infinite;
+}
+
+.bird-container--three {
+    animation: fly3 12s linear infinite;
+}
+
+.bird-container--four {
+    animation: fly4 18s linear infinite;
+}
+
+@keyframes fly1 {
+    0% {
+        transform: translate(-10%, 50%) scale(0.5) rotate(0deg);
+    }
+    100% {
+        transform: translate(110%, -50%) scale(0.5) rotate(360deg);
+    }
+}
+
+@keyframes fly2 {
+    0% {
+        transform: translate(-10%, 60%) scale(0.5) rotate(0deg);
+    }
+    100% {
+        transform: translate(110%, -60%) scale(0.5) rotate(360deg);
+    }
+}
+
+@keyframes fly3 {
+    0% {
+        transform: translate(-10%, 70%) scale(0.5) rotate(0deg);
+    }
+    100% {
+        transform: translate(110%, -70%) scale(0.5) rotate(360deg);
+    }
+}
+
+@keyframes fly4 {
+    0% {
+        transform: translate(-10%, 80%) scale(0.5) rotate(0deg);
+    }
+    100% {
+        transform: translate(110%, -80%) scale(0.5) rotate(360deg);
+    }
+}
+
+@keyframes fly-cycle {
+    100% {
+        background-position: 900px 0;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2d0e28a6;
+}
+
+/* Presentacion en ecarusel de las obras*/
+
+.titulo h2{
+    background-color: burlywood;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -5%;
+    margin-left: 500px;
+    text-align: center;
+    border-radius: 100px;
+
+}
+.titulo p{
+    background-color: rgb(230, 200, 162);
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 50px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.Presentacion {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 400px;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.content img{
+    margin-top: -10px;
+}
+
+#song-1{
+    width: 100%;
+  height: 100%; 
+}
+
+#song-2{
+    width: 65%;
+    height: 70%; 
+}
+
+.content  {
+  width: 100%;
+  height: 100%; 
+  margin-top: 100px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+#item-2:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+  
+.Presentacion img {
+    box-shadow: 0px 0px 5px 0px rgba(15, 15, 15, 0.47);
+}
+
+
+.player {
+  background-color:rgba(247, 209, 163, 0.681);
+  border-radius: 8px;
+  min-width: 1100px;
+  padding: 16px 10px;
+  margin-top: 350px;
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.play-icon{ margin-right: 10px; }
+
+.song-info {
+  width: calc(100% - 32px);
+  display: block;
+}
+
+.song-info .title {
+  color: #232123;
+  font-size: 15px;
+  line-height: 24px;
+}
+#song-info-2 .title{
+    margin-top: 20px;
+}
+
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.subtitle, .time {
+  font-size: 13px;
+  line-height: 12px;
+  color: #3a373a;
+}
+
+.time {
+  font-size: 12px;
+  line-height: 16px;
+  color: #a5a5a5;
+  font-weight: 500px;
+  margin-left: auto;
+}
+
+.progress-bar {
+  height: 3px;
+  width: 100%;
+  background-color: #e9efff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  display: block;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background-color: #d08234;
+  border-radius: 6px;
+}
+
+.info-area {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: transform .4s ease-in;
+}
+
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test  {
+  transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test  {
+  transform: translateY(-80px);
+}
+
+/*Obras de arte emblematicas */
+
+#raya1{
+    background-color: #000000;
+    margin-top: 50px;
+    height: 1px;
+    width: -100px;
+}
+h2{
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    width: 600px;
+    border: #000;
+    border-style:double;
+    background-color: antiquewhite;
+    margin-left: 300px;
+
+}
+
+.card-OBRAS {
+    background-color: #f8e6ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 70px 40px rgba(18, 7, 183, 0.1);
+    margin-top: 10px;
+  }
+  
+  .card-OBRAS img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .card-OBRAS h5 {
+    margin-top: 0;
+  }
+  
+  .card-OBRAS p {
+    margin-bottom: 10px;
+  }
+
+  .slider {
+    position: relative;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .card-OBRAS button{
+    background-color: #98670b;
+  }
+  
+  .slider.carousel-control-prev,.slider.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: #8938cf;
+    color: #b7adad;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slider.carousel-control-prev:hover,.slider.carousel-control-next:hover {
+    background-color: #a343e8;
+  }
+  
+  #ver{
+    border: #000;
+    border-style:double;
+    background-color: antiquewhite;
+    font-size: 20px;
+    color: #000;
+    height: 50px;
+    width: 200px;
+    font-family:  "Agbalumo", system-ui;
+    text-align: center;
+    margin-left: 500px;
+}
+  
+@media  screen and (min-width: 280px) and (max-width: 490px) {
+    .offcanvas-sm {
+        position: fixed;
+        top: 0;
+        right:0;
+        width: 250px; /* ancho del menú lateral */
+        height: 100vh;
+        background-color: #faf6f6;
+        padding: 20px;
+        border-left: 1px solid #ddd;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .offcanvas.show {
+        transform: translateX(0);
+    }
+
+
+    /* Presentacion en ecarusel de las obras*/
+
+.titulo h2{
+    background-color: burlywood;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400px;
+    font-style: normal;
+    margin-top: -30%;
+    margin-left: 2px;
+    text-align: center;
+    border-radius: 50px;
+    height: 100px;
+    width: 230px;
+    font-size: 25px;
+
+}
+.titulo p{
+    background-color: rgb(230, 200, 162);
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.Presentacion {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 400px;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-left: -800px;
+}
+
+.content img{
+    margin-top: -10px;
+}
+
+#song-1{
+    width: 100%;
+  height: 100%; 
+}
+
+#song-2{
+    width: 65%;
+    height: 70%; 
+}
+
+.content  {
+  width: 100%;
+  height: 100%; 
+  margin-top: 100px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+#item-2:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+  
+.Presentacion img {
+    box-shadow: 0px 0px 5px 0px rgba(15, 15, 15, 0.47);
+}
+
+
+.player {
+  background-color:rgba(247, 209, 163, 0.681);
+  border-radius: 8px;
+  min-width: 250px;
+  min-height: 30px;
+  padding: 20px 10px;
+  margin-top: 100px;
+  margin-left: -800px;
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.play-icon{ margin-right: 10px; }
+
+.song-info {
+  width: calc(100% - 32px);
+  display: block;
+}
+
+.song-info .title {
+  color: #232123;
+  font-size: 15px;
+  line-height: 24px;
+}
+#song-info-2 .title{
+    margin-top: 20px;
+}
+
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.subtitle, .time {
+  font-size: 13px;
+  line-height: 12px;
+  color: #3a373a;
+}
+
+.time {
+  font-size: 12px;
+  line-height: 16px;
+  color: #a5a5a5;
+  font-weight: 500px;
+  margin-left: auto;
+}
+
+.progress-bar {
+  height: 3px;
+  width: 100%;
+  background-color: #e9efff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  display: block;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background-color: #d08234;
+  border-radius: 6px;
+}
+
+.info-area {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: transform .4s ease-in;
+}
+
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test  {
+  transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test  {
+  transform: translateY(-80px);
+}
+
+h2{
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    border: #000;
+    border-style:double;
+    background-color: antiquewhite;
+    margin-left: 10px;
+
+}
+
+#ver{
+    border: #000;
+    border-style:double;
+    background-color: antiquewhite;
+    font-size: 10px;
+    color: #000;
+    height: 30px;
+    width: 100px;
+    font-family:  "Agbalumo", system-ui;
+    text-align: center;
+    margin-left: 80px;
+}
+
+}
+
+@media  screen and (min-width: 491px) and (max-width: 570px) {
+  
+
+
+    /* Presentacion en ecarusel de las obras*/
+
+.titulo h2{
+    background-color: burlywood;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400px;
+    font-style: normal;
+    margin-top: -20%;
+    margin-left: 30px;
+    text-align: center;
+    border-radius: 50px;
+    height: 50px;
+    width: 400px;
+    font-size: 25px;
+
+}
+.titulo p{
+    background-color: rgb(230, 200, 162);
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.Presentacion {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 400px;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-left: -800px;
+}
+
+.content img{
+    margin-top: -10px;
+}
+
+#song-1{
+    width: 100%;
+  height: 100%; 
+}
+
+#song-2{
+    width: 65%;
+    height: 70%; 
+}
+
+.content  {
+  width: 100%;
+  height: 100%; 
+  margin-top: 100px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+#item-2:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+  
+.Presentacion img {
+    box-shadow: 0px 0px 5px 0px rgba(15, 15, 15, 0.47);
+}
+
+
+.player {
+  background-color:rgba(247, 209, 163, 0.681);
+  border-radius: 8px;
+  min-width: 400px;
+  min-height: 30px;
+  padding: 20px 10px;
+  margin-top: 200px;
+  margin-left: -800px;
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.play-icon{ margin-right: 10px; }
+
+.song-info {
+  width: calc(100% - 32px);
+  display: block;
+}
+
+.song-info .title {
+  color: #232123;
+  font-size: 15px;
+  line-height: 24px;
+}
+#song-info-2 .title{
+    margin-top: 20px;
+}
+
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.subtitle, .time {
+  font-size: 13px;
+  line-height: 12px;
+  color: #3a373a;
+}
+
+.time {
+  font-size: 12px;
+  line-height: 16px;
+  color: #a5a5a5;
+  font-weight: 500px;
+  margin-left: auto;
+}
+
+.progress-bar {
+  height: 3px;
+  width: 100%;
+  background-color: #e9efff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  display: block;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background-color: #d08234;
+  border-radius: 6px;
+}
+
+.info-area {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: transform .4s ease-in;
+}
+
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test  {
+  transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test  {
+  transform: translateY(-80px);
+}
+
+h2{
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    width: 350px;
+    border: #000;
+    border-style:double;
+    background-color: antiquewhite;
+    margin-left: 50px;
+
+}
+
+#ver{
+    border: #000;
+    border-style:double;
+    background-color: antiquewhite;
+    font-size: 15px;
+    color: #000;
+    height: 40px;
+    width: 200px;
+    font-family:  "Agbalumo", system-ui;
+    text-align: center;
+    margin-left: 130px;
+}
+
+}
+
+@media  screen and (min-width: 571px) and (max-width: 890px) {
+  
+
+
+    /* Presentacion en ecarusel de las obras*/
+
+.titulo h2{
+    background-color: burlywood;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400px;
+    font-style: normal;
+    margin-top: -20%;
+    margin-left: 30px;
+    text-align: center;
+    border-radius: 50px;
+    height: 50px;
+    width: 400px;
+    font-size: 25px;
+
+}
+.titulo p{
+    background-color: rgb(230, 200, 162);
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    height: 80px;
+    width: 400px;
+
+}
+
+
+input[type=radio] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.Presentacion {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 400px;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-left: -800px;
+}
+
+.content img{
+    margin-top: -10px;
+}
+
+#song-1{
+    width: 100%;
+  height: 100%; 
+}
+
+#song-2{
+    width: 65%;
+    height: 70%; 
+}
+
+.content  {
+  width: 100%;
+  height: 100%; 
+  margin-top: 100px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+#item-2:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+
+  
+.Presentacion img {
+    box-shadow: 0px 0px 5px 0px rgba(15, 15, 15, 0.47);
+}
+
+
+.player {
+  background-color:rgba(247, 209, 163, 0.681);
+  border-radius: 8px;
+  min-width: 400px;
+  min-height: 30px;
+  padding: 20px 10px;
+  margin-top: 200px;
+  margin-left: -800px;
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.play-icon{ margin-right: 10px; }
+
+.song-info {
+  width: calc(100% - 32px);
+  display: block;
+}
+
+.song-info .title {
+  color: #232123;
+  font-size: 15px;
+  line-height: 24px;
+}
+#song-info-2 .title{
+    margin-top: 20px;
+}
+
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.subtitle, .time {
+  font-size: 13px;
+  line-height: 12px;
+  color: #3a373a;
+}
+
+.time {
+  font-size: 12px;
+  line-height: 16px;
+  color: #a5a5a5;
+  font-weight: 500px;
+  margin-left: auto;
+}
+
+.progress-bar {
+  height: 3px;
+  width: 100%;
+  background-color: #e9efff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  display: block;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background-color: #d08234;
+  border-radius: 6px;
+}
+
+.info-area {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: transform .4s ease-in;
+}
+
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test  {
+  transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test  {
+  transform: translateY(-80px);
+}
+
+h2{
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    width: 350px;
+    border: #000;
+    border-style:double;
+    background-color: antiquewhite;
+    margin-left: 50px;
+
+}
+
+#ver{
+    border: #000;
+    border-style:double;
+    background-color: antiquewhite;
+    font-size: 15px;
+    color: #000;
+    height: 40px;
+    width: 200px;
+    font-family:  "Agbalumo", system-ui;
+    text-align: center;
+    margin-left: 130px;
+}
+
+}
+
+
+
+
+
+  

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1 class="mb-0">Galería de Arte Coreano </h1>
+        <p class="lead">Una experienza a unos cuantos siglos </p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Inicio</a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Presentación</a></li>
+                <li class="nav-item"><a class="nav-link" href="obras.html">Obras</a></li>
+                <li class="nav-item"><a class="nav-link" href="Biografias.html">Artistas</a></li>
+                <li class="nav-item"><a class="nav-link" href="Formulario.html">Inscripción</a></li>
+                <li class="nav-item"><a class="nav-link" href="calendario.html">Calendario</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="bird-animation">
+        <div class="bird-container bird-container--one">
+            <div class="bird bird--one"></div>
+        </div>
+        <div class="bird-container bird-container--two">
+            <div class="bird bird--two"></div>
+        </div>
+        <div class="bird-container bird-container--three">
+            <div class="bird bird--three"></div>
+        </div>
+        <div class="bird-container bird-container--four">
+            <div class="bird bird--four"></div>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="titulo">
+            <h2>Presentación del Arte de la Galería</h2>
+            <p>Aquí se presenta una variedad de estilos y períodos históricos del arte coreano, desde el arte Joseon hasta el arte contemporáneo coreano.</p>
+        </div>
+        <div class="Presentacion">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img class="jeseon-pre" src="images/arteJeseon.webp" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img class="contem-pre" src="images/Arte-contemporaneo.jpg" alt="song">
+            </label>
+          </div>
+          <div class="player">
+            <div class="upper-part">
+              <div class="play-icon">
+                <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+                  <defs/>
+                  <path d="M5 3l14 9-14 9V3z"/>
+                </svg>
+              </div>
+              <div class="info-area" id="test">
+                <label class="song-info" id="song-info-1">
+                  <div class="title">Dinastia Jeseon</div>
+                  <div class="sub-line">
+                    <div class="subtitle">La Dinastía Joseon en la sociedad y la cultura de la antigua Corea fue su énfasis en las artes y la artesanía. Se fomentó el desarrollo de la cerámica, la caligrafía, la pintura y la música, lo que llevó a la creación de obras de arte distintivas que reflejaban los valores estéticos y espirituales de la época.</div>
+                  </div>
+                </label>
+                <label class="song-info" id="song-info-2">
+                  <div class="title">Arte contemporaneo </div>
+                  <div class="sub-line">
+                    <div class="subtitle">Cuando los japoneses invadieron el país, la pintura tradicional coreana estaba dirigida por Cho Seok-chin (1853-1920) y Ahn Chun-sik (1861-1919). Cho fue el último de los pintores de la corte de la era Joseon, y Ahn fue el último artista erudito. Pero ambos practicaron el estilo meridional del arte de la dinastía Qing, con su énfasis en la técnica de los dedos.</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <span class="progress"></span>
+            </div>
+          </div>
+        </div>
+
+
+
+    <div id="raya1"> </div>
+
+    <section id="obras-emblematicas">
+        <div class="container">
+        <h2 class="text-center">Obras emplematicas del arte coreano </h2>
+        <div class="row">
+            <div class="col-md-6">
+            <div class="card-OBRAS">
+                <img src="images/coordillera.jpg" alt="Course 1">
+                <div class="card-body">
+                <h5 class="card-title">Viata completa del monte Geumgang</h5>
+                <p class="card-text">En Vista completa del monte Geumgang, Jeong Seon representó las montañas desde lo alto.</p>
+                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne">¡INCREIBLE! CONOCE MAS </button>
+                <div id="collapseOne" class="collapse">
+                    <p>Se ven semejanzas al comparar una foto real de la cordillera (2.6.3) con la pintura de Jeong Seon. En este contexto, el enfoque de Jeong Seon representó con precisión el escenario coreano y fue revolucionario ya que rompió con las tradiciones chinas.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="card-OBRAS">
+                <img src="images/pintura de genero.jpg" alt="Course 2">
+                <div class="card-body">
+                <h5 class="card-title">La exuberancia del chico bailarín</h5>
+                <p class="card-text">El chico está en medio salto con un pie en el aire mientras que el otro apenas toca el suelo.</p>
+                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseTwo">¡INCREIBLE! CONOCE MAS </button>
+                <div id="collapseTwo" class="collapse">
+                    <p>Los espectadores pueden sentir la alegría que exuda este chico mientras sonríe o ríe mientras baila. El sexteto de músicos se asienta en una formación circular, imitando la línea curva del brazo izquierdo del niño; estas repetidas líneas implícitas subrayan el dinamismo de la composición general. Kim Hongdo aprovechó la colocación circular y la utilizó para mostrar a los músicos desde diferentes ángulos; algunos se muestran desde atrás, otros están en la vista de tres cuartos, y tres se pintan frontalmente. </p>
+                </div>
+                </div>
+            </div>
+            </div>
+            
+            <a id="ver" class="nav-link" href="obras.html">VER MAS </a>
+        </div>
+        </div>
+    </section>
+
+    <div id="raya1"> </div>
+
+    <section id="biografias-artistas">
+            <h2 class="text-center">Biografías de Artistas</h2>
+            <div class="row">
+                <div class="col-md-4">
+                <div class="card-OBRAS">
+                    <img src="images/Lee Bul.jpg" alt="Course 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Lee Bul</h5>
+                    <p class="card-text">En Vista completa del monte Geumgang, Jeong Seon representó las montañas desde lo alto.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="card-OBRAS">
+                    <img src="images/Ham jin.jpg" alt="Course 2">
+                    <div class="card-body">
+                    <h5 class="card-title">Ham Jin </h5>
+                    <p class="card-text">El chico está en medio salto con un pie en el aire mientras que el otro apenas toca el suelo.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-OBRAS">
+                        <img src="images/jung lee.jpg" alt="Course 2">
+                        <div class="card-body">
+                        <h5 class="card-title">La exuberancia del chico bailarín</h5>
+                        <p class="card-text">El chico está en medio salto con un pie en el aire mientras que el otro apenas toca el suelo.</p>
+                       
+                        </div>
+                    </div>
+                    </div>
+                
+                <a id="ver" class="nav-link" href="Biografias.html">VER MAS </a>
+            </div>
+            </div>
+    
+        </div>
+    </section>
+        
+    </main>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Galería de Arte | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
