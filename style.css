@@ -1523,7 +1523,7 @@ input[type=radio] {
         position: fixed;
         top: 0;
         left: 0;
-        width: 45%;
+        width: 55%;
         height: 100%;
         pointer-events: none;
         overflow: hidden;
