@@ -7,6 +7,8 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    height: auto;
+    width: auto;
 }
 
 header {
@@ -52,6 +54,11 @@ header p {
         width: 60px;
         z-index: 1060;
         position: relative;
+    }
+
+    #navbarNav{
+        text-align: center;
+        margin-top: 10px;
     }
 
     .navbar-collapse{
@@ -163,7 +170,7 @@ button:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 45%;
     height: 100%;
     pointer-events: none;
     overflow: hidden;
@@ -1255,7 +1262,7 @@ h2{
     font-family: "Agbalumo", system-ui;
     font-weight: 400px;
     font-style: normal;
-    margin-top: -10%;
+    margin-top: -30%;
     margin-left: 70px;
     text-align: center;
     border-radius: 50px;
@@ -1520,8 +1527,8 @@ input[type=radio] {
     font-family: "Agbalumo", system-ui;
     font-weight: 400px;
     font-style: normal;
-    margin-top: -40%;
-    margin-left: 2px;
+    margin-top: -40px;
+    margin-left: -1px;
     text-align: center;
     border-radius: 50px;
     height: 40px;
@@ -1534,12 +1541,12 @@ input[type=radio] {
     font-family: "Agbalumo", system-ui;
     font-weight: 400;
     font-style: normal;
-    margin-left: -1px;
+    margin-left: -15px;
     border-radius: 10px;
     text-align: center;
     font-size: 10px;
     height: 50px;
-    width: 250px;
+    width: 270px;
 }
 
 
@@ -1626,7 +1633,7 @@ input[type=radio] {
   min-width: 250px;
   min-height: 30px;
   padding: 20px 10px;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-left: -800px;
 }
 
@@ -1726,7 +1733,7 @@ input[type=radio] {
     border: #000;
     border-style:double;
     background-color: antiquewhite;
-    margin-left: 10px;
+    margin-left: 40px;
 
 }
 
@@ -1743,7 +1750,7 @@ input[type=radio] {
     border: #000;
     border-style:double;
     background-color: antiquewhite;
-    margin-left: 20px;
+    margin-left: 10px;
 
 }
 
@@ -1757,7 +1764,7 @@ input[type=radio] {
     width: 150px;
     font-family:  "Agbalumo", system-ui;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 #obras-emblematicas #ver{
@@ -1770,7 +1777,7 @@ input[type=radio] {
     width: 150px;
     font-family:  "Agbalumo", system-ui;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 }

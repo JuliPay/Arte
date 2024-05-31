@@ -240,3 +240,87 @@ h2{
         padding: 10px;
     }
 }
+
+/*Boton de hamburguesa*/
+@media screen and (max-width: 800px) {
+    .navbar-toggler{
+        display: block;
+        height: 40px;
+        width: 60px;
+        z-index: 1060;
+        position: relative;
+    }
+
+    #navbarNav{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navbar-collapse{
+        position:absolute;
+        top: 0;
+        right: 0;
+        height: 60vh;
+        width: 160px;
+        border-radius: 5px;
+        background-image: url(images/artista6.webp);
+        background-size: cover;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 1050;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0);
+    }
+
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+    
+    .navbar-toggler-icon {
+        display: block;
+        position: relative;
+    }
+
+    .navbar-toggler.open .navbar-toggler-icon {
+        display: none;
+    }
+    
+    .navbar-toggler.open::before,
+    .navbar-toggler.open::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 24px;
+        height: 2px;
+        background-color: #000;
+    }
+
+    .navbar-toggler.open::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .navbar-toggler.open::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        display: none;
+    }
+    
+    .navbar-toggler.open .navbar-toggler-icon span {
+        display: none;
+    }
+    
+    .navbar-toggler.open .navbar-toggler-icon::before,
+    .navbar-toggler.open .navbar-toggler-icon::after {
+        display: block;
+    }
+}
