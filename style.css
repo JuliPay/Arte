@@ -1540,7 +1540,7 @@ input[type=radio] {
     font-family: "Agbalumo", system-ui;
     font-weight: 400px;
     font-style: normal;
-    margin-top: -40px;
+    margin-top: -50px;
     margin-left: -1px;
     text-align: center;
     border-radius: 50px;
@@ -1646,7 +1646,7 @@ input[type=radio] {
   min-width: 250px;
   min-height: 30px;
   padding: 20px 10px;
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: -800px;
 }
 
